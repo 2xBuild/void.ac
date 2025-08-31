@@ -1,63 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>void</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Blog</title>
+
   <style>
     body {
       font-family: 'Courier New', monospace;
-      font-weight: 400;
-      white-space: pre-line;
-    
-      color: #000000;
-      padding: 20px;
-    }
-   h1{
-    margin-bottom: 0;
-    padding: 0;
-    font-size: 70px;
-   }
-   h2{
-    margin-bottom: 0;
-    padding: 0;
-    font-size: 50px;
-   }
-    p{
-      margin-top: 0;
+      background: #fff;
+      color: #000;
+      margin: 0;
       padding: 0;
-      font-size: 40px;
+      line-height: 1.6;
     }
-    a{
-      color: #000000;
+
+    .container {
+      max-width: 800px;   
+      margin: 0 auto;     
+      padding: 0 1rem;    
     }
-    .container{
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 15px;
-      border-radius: 10px;
- 
+
+    header {
+      text-align: left;
+      padding: 3rem 1rem 0.5rem;
+      border-bottom: 1px solid #000;
     }
-    ul li{
-      font-size: 40px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .section {
+      border-bottom: 1px solid #000;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .section:hover {
+      background: #f9f9f9;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .content {
+      display: none;
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      color: #222;
+    }
+
+    .section.active .content {
+      display: block;
     }
   </style>
 </head>
-
 <body>
 
-  <div class="container" style="text-align: left;">
+  <div class="container">
+    <header>
+      <h1>im void.</h1>
+      <p>is that enough? i guess no. <s>but who cares?</s> let me write more.
+    21 yo self-taught dev. <b>single btw.</b></p>
+</header>
 
-    <h1>im void. </h1><p>is that enough? i guess no. <s>but who cares?</s> let me write more.
-
-    <!-- <h1>exploring</h1> -->
-    21 yo self-taught dev. <b>single btw.</b>
- <hr>
-   
-<h2>Hobbies.</h2> <p>chess, music and building cool stuff and sh!tposting on x.
-  </p>
- <hr>
-  <h2>Background.</h2>
-  <ul>
+    <div class="section">
+      <h2>Background</h2>
+      <div class="content">
+        <p> <ul>
   <li>In web3 and crypto since 2020.</li>
   <li>Built tools, communities and brands.</li>
   <li>Learnt web development (HTML,CSS,PHP) in 2020.</li>
@@ -67,47 +90,80 @@
   <li>In 2023, got into nodejs to build some cool telegram bots.</li>
   <li>In 2024 end started back with python. Learnt numpy,pandas,matplotlib,seaborn and some ground level ml.</li>
   <li>Hit the mood swing again and now into web development and blockchain.</li>
-</ul>
- <hr>
+</ul></p>
+      </div>
+    </div>
 
-  <h2>Soft skills</h2>
-   <p>Leadership.
-    Analyst. 
-    Risk-taker // venturist. 
-    Building and marketing. 
-    Writing in depth 
-    Shitposting and branding</p>
- <hr>
+    <div class="section">
+      <h2>Hobbies</h2>
+      <div class="content">
+        <p>I love playing chess, listening high energy songs, building & learning cool stuff along with journaling on x.</p>
+      </div>
+    </div>
 
-  <h2>Random facts about me.</h2>
+    <div class="section">
+      <h2>Soft Skills</h2>
+      <div class="content">
+     <p><ul><li>Leadership.</li>
+    <li>Analyst.</li>
+    <li>Risk-taker // venturist.</li>
+    <li>Building and marketing.</li>
+    <li>Writing in depth </li>
+    <li>Shitposting and branding</li></ul></p>
+      </div>
+    </div>
 
+    <div class="section">
+      <h2>Random facts about me.</h2>
+      <div class="content">
+        <p><ul>
+          <li>i mostly code out of passion, rarely for money.</li>
+          <li>chasing knowledge and experimenting with it.</li>
+          <li>not a perfect guy but I learn and adapt quickly.</li>
+        </ul></p>
+      </div>
+    </div>
 
-<ul>
-  <li>i mostly code out of passion, rarely for money.</li>
-  <li>chasing knowledge and experimenting with it.</li>
-  <li>not a perfect guy but I learn and adapt quickly.</li>
-</ul>
-  
+    <div class="section">
+      <h2>Open for business.</h2>
+      <div class="content">
+        <p>in case you need talents/team to build, grow or market your product, or maybe a co-founder? dm's are open to discuss.</p>
+      </div>
+    </div>
 
+    <div class="section">
+      <h2>My Socials</h2>
+      <div class="content">
+        <p><a href="https://x.com/2xbuild">x</a> and <a href="https://github.com/2xbuild">github</a>. it should be enough as of now.</p>
+      </div>
+    </div>
 
- <hr>
-    <h2>Open for business.</h2>
-<p>in case you need talents/team to build, grow or market your product, or maybe a co-founder? dm's are open to discuss.</p>
- <hr>
-<h2>Disclaimer</h2>
-<p>views are my own and don't reflect any organization. following/liking doesn't mean i endorse them. i'm not a certified advisor in any field. i use social media for fun and personal sharing.</p>
- <hr>
-<h2>FAQ</h2>
-<h2>1. Open for job?</h2>
-<p>not generally, unless it is such an extraordinary opportunity (not always about money) which can change my mind.</p>
+    <div class="section">
+      <h2>Disclaimer</h2>
+      <div class="content">
+        <p>views are my own and don't reflect any organization. following/liking doesn't mean i endorse them. i'm not a certified advisor in any field. i use social media for fun and personal sharing.</p>
+      </div>
+    </div>
 
-<h2>2.What's your socials?</h2>
-<p><a href="https://x.com/2xbuild">x</a> and <a href="https://github.com/2xbuild">github</a>. it should be enough as of now.</p>
-<hr>
-<p><a>Thank you.</a></p>
-
+    <div class="section">
+      <h2>FAQ</h2>
+      <div class="content">
+        <p><b>Q:</b> Open for job?<br>
+        <b>A:</b> not generally, unless it is such an extraordinary opportunity (not always about money) which can change my mind.<br><br>
+        <b>Q:</b> Where are you from? and what's your preferred language?<br>
+        <b>A:</b> From earth, tho i prefer binary but yeah I understand english too.</p>
+      </div>
+    </div>
   </div>
 
-  
+  <script>
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      section.addEventListener('click', () => {
+        section.classList.toggle('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
