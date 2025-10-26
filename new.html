@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>voidpedia</title>
+    <style>
+   
+    :root{color-scheme: light dark}
+    html,body{height:100%;margin:0;padding:0}
+    body{
+      font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+      line-height:1.45;
+   
+      background:#fff;
+      color:#111;
+      padding:32px;
+    }
+
+    .container{max-width:800px;margin:0 auto}
+    header{display:flex;gap:20px;align-items:center;margin-bottom:18px}
+    .photo{width:96px;height:96px;border-radius:100px;overflow:hidden;flex:0 0 96px;background:#eee;display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:22px;margin:0 0 4px 0}
+    p.lead{margin:0;color:#222}
+
+    section{margin-top:18px}
+    h2{font-size:14px;margin:0 0 8px 0;text-transform:uppercase;letter-spacing:0.06em}
+
+    ul.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:6px 0 0 0;list-style:none}
+    ul.skills li{padding:6px 10px;border:1px solid #ddd;border-radius:3px;font-size:11.6px}
+
+    .timeline{padding:0;margin:6px 0 0 0;list-style:none}
+    .timeline li{margin-bottom:10px}
+    .meta{font-size:13px;color:#444}
+    .project{margin:6px 0 0 0; font-size: small;}
+
+    footer{margin-top:26px;font-size:13px;color:#333}
+    a{
+        color: #111;;
+    }
+
+    section p{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+
+    }
+
+
+    @media print{
+      body{padding:12mm}
+      .photo{border-radius:2px}
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="photo" aria-hidden="true">
+
+          <img src="void.png" alt="void">
+        </div>
+        <div>
+          <h1>void</h1>
+          <p class="lead">20 yo self-taught full‑stack developer.</p>
+          <p style="margin:6px 0 0 0;font-size:13px;color:#333">[ primarily
+            backend-oriented]</p>
+        </div>
+      </header>
+
+      <section id="skills">
+        <h2>Tech Stack</h2>
+        <ul class="skills">
+          <li>Js&Ts</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>HTML & CSS</li>
+          <li>Express</li>
+          <li>grammY</li>
+          <li>Python</li>
+          <li>Numpy</li>
+          <li>Pandas</li>
+          <li>Git and Github</li>
+          <li>MongoDB</li>
+          <li>SQL</li>
+
+        </ul>
+      </section>
+
+      <section id="journey">
+        <h2>Journey</h2>
+        <ul class="timeline">
+
+          <li>
+
+            <div class="project"><strong>Skill Maxxing : </strong> <span>2024 -
+                Present</span>
+              <p>learning fullstack webdev followed by web3 & devops.</p></div>
+          </li>
+
+          <li>
+
+            <div class="project"><strong>Gigs and Agency : </strong> <span>2023
+                — 2024</span>
+              <p>worked with couple of projects help them market better, then
+                built dev and marketing agencies and quitted. </p></div>
+          </li>
+
+          <li>
+
+            <div class="project"><strong>Marketing; web3 and crypto : </strong>
+              <span>2022 — 2023</span>
+              <p>i got my interest off with coding and started career in
+                marketing, networking and excuting campaigns for diff projects
+                with kols.</p></div>
+          </li>
+
+          <li>
+
+            <div class="project"><strong>Founder; ButterLemonBot : </strong>
+              <span>2020 — 2022</span>
+              <p> when i firstly learnt web dev with php, built this for fun and
+                eventually hit 10-15k users across 50+ tg groups.</p></div>
+          </li>
+
+        </ul>
+      </section>
+
+       <section>
+        <h2>soft skills</h2>
+      <ul class="skills">
+          <li>Leadership</li>
+          <li>Research</li>
+          <li>Risk Taking Mindset</li>
+          <li>Writing</li>
+          <li>Sh!tposting and Branding</li>
+          <li>Quick Learner and Adaptable</li>
+   
+
+        </ul>
+      </section>
+
+       <section>
+        <h2>Hobbies</h2>
+     
+    <p>I love playing chess, listening high energy songs, building & learning cool stuff along with journaling on x.</p>
+
+
+  
+      </section>
+
+
+
+       <section>
+        <h2>Disclaimer</h2>
+        <p>views are my own and don't reflect any organization. following/liking doesn't mean i endorse them. i'm not a certified advisor in any field. i use social media for fun and personal sharing.</p>
+   
+   
+
+      </section>
+
+
+      <footer>
+        <div><strong>Social Media</strong>:<br> <a
+            href="https://github.com/2xBuild">GitHub</a> • <a
+            href="https://x.com/2xBuild">Twitter(X)</a></div>
+        <div class="msg" style="padding-top: 2px;">twitter is primary source to
+          reach me out.</div>
+      </footer>
+    </div>
+
+    
+<script>
+
+  function expand(id){
+
+    var x = document.getElementById(id);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+
+
+const birthDate = new Date('2004-12-29T00:00:00Z'); 
+const ageEl = document.querySelector('.lead');
+
+function updateAge() {
+  const now = new Date();
+  const diff = now - birthDate;
+  const years = diff / (1000 * 60 * 60 * 24 * 365.25);
+  const formatted = years.toFixed(8);
+  ageEl.innerHTML = `${formatted} yo self-taught full-stack developer.`;
+}
+
+updateAge();
+setInterval(updateAge, 1000);
+
+</script>
+  </body>
+</html>
